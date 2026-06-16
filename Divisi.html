@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisi & Kurikulum - Multimedia Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Animated Background Orbs -->
+    <div class="aurora-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <!-- Logo dengan Gambar + Teks Rapi -->
+            <a href="beranda.html" class="logo">
+                <img src="assets/logo.png" class="logo-icon" alt="Logo Multimedia Club">
+                <div class="logo-text">
+                    <span class="logo-main">MULTIMEDIA</span>
+                    <span class="logo-sub">Creative & Tech</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="divisi.html" class="active">Divisi</a></li>
+                <li><a href="karya.html">Karya</a></li>
+                <li><a href="Pengurus.html">Pengurus</a></li>
+                <li><a href="divisi.html#daftar" class="btn-primary">Gabung Sekarang</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content reveal-up">
+                <div class="badge">Struktur Pembelajaran</div>
+                <h1>Jelajahi <span class="aurora-text">Divisi Kami</span></h1>
+                <p>Dua pilar kompetensi yang dirancang untuk membekali kamu dengan skill industri, baik di balik layar kode maupun di balik lensa kamera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Divisi Section -->
+    <section class="section">
+        <div class="container">
+            <div class="divisi-grid detailed-grid">
+                <!-- Programming -->
+                <div class="divisi-card programming reveal-left">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Programming Division</h3>
+                    </div>
+                    <p class="divisi-desc">Membina bakat di bidang rekayasa perangkat lunak. Anggota didorong untuk mampu menerjemahkan ide bisnis menjadi baris kode siap pakai yang efisien dan scalable.</p>
+                    
+                    <h4 class="curriculum-title">Kurikulum Utama :</h4>
+                    <ul class="curriculum">
+                        <li><i class="fas fa-check-circle"></i> <strong>Dasar Pemrograman:</strong> Penjelasan Dasar-dasar Pemrograman</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Praktik Pemrograman:</strong> Mengasah dan Mempraktikan Materi</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Frontend:</strong> HTML, CSS, & Javascript</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Proyek Bersama:</strong> Website Buatan Bersama</li>
+                    </ul>
+                </div>
+
+                <!-- Broadcasting -->
+                <div class="divisi-card broadcasting reveal-right">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-film"></i></div>
+                        <h3>Broadcasting Division</h3>
+                    </div>
+                    <p class="divisi-desc">Mengasah kepekaan estetika visual dan produksi audio. Mempersiapkan kru yang andal di lapangan (on-site) maupun di balik meja editing (post-production).</p>
+                    
+                    <h4 class="curriculum-title">Kurikulum Utama :</h4>
+                    <ul class="curriculum">
+                        <li><i class="fas fa-check-circle"></i> <strong>Production:</strong> Komposisi Kamera, Lighting, Audio Recording</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Post-Production:</strong> Video Editing Pro (DaVinci), Color Grading LUT</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Tools:</strong> Blackmagic Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Lab Room Section -->
+    <section id="interaktif" class="section bg-darker">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Interactive Lab Room</h2>
+                <p class="subtitle">Zona Eksperimen Anggota</p>
+                <p class="description">Mainkan simulator interaktif di bawah ini untuk merasakan proyek nyata masing-masing divisi!</p>
+            </div>
+            
+            <div class="lab-grid">
+                <!-- Programming Sandbox -->
+                <div class="lab-card reveal-left">
+                    <h3><i class="fas fa-terminal"></i> Programming Sandbox</h3>
+                    <p>Live Edit: Tulis pesanmu di bawah, script akan otomatis merubah tampilan teks pada layar simulasi secara real-time!</p>
+                    <div class="sandbox-container">
+                        <div class="code-input">
+                            <label>// Sunting teks dalam variabel:</label>
+                            <input type="text" id="bannerInput" value="Kreativitas Tanpa Batas!" placeholder="Ketik sesuatu di sini...">
+                        </div>
+                        <div class="output-window" id="outputWindow">
+                            <div class="window-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                OUTPUT_WINDOW
+                            </div>
+                            <div class="window-body">
+                                <h2 id="liveText">Kreativitas Tanpa Batas!</h2>
+                                <span class="build-status"><i class="fas fa-check"></i> Build Succeeded</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camera Viewfinder -->
+                <div class="lab-card reveal-right">
+                    <h3><i class="fas fa-camera"></i> Camera Viewfinder Simulator</h3>
+                    <p>Lens Control: Gunakan slider untuk mengatur Exposure (kecerahan) dan Depth of Field (bokeh) layaknya kamera profesional!</p>
+                    <div class="camera-sim-container">
+                        <div class="viewfinder-display" id="viewfinder">
+                            <div class="vf-overlay">
+                                <span class="rec-dot">● REC 1080p</span>
+                                <span id="vf-settings">ISO 400 | f/2.8</span>
+                            </div>
+                            <div class="vf-subject">
+                                <i class="fas fa-user"></i>
+                                <span>Aktor Utama</span>
+                            </div>
+                        </div>
+                        <div class="camera-controls">
+                            <div class="control-group">
+                                <label>Exposure (Brightness)</label>
+                                <input type="range" id="exposureSlider" min="0.2" max="1.5" step="0.1" value="1">
+                            </div>
+                            <div class="control-group">
+                                <label>Bokeh (Blur Depth)</label>
+                                <input type="range" id="bokehSlider" min="0" max="10" step="1" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration CTA Section (PENGGANTI FORM) -->
+    <section id="daftar" class="section">
+        <div class="container form-container reveal-up">
+            <div class="section-header">
+                <h2>Siap Bergabung?</h2>
+                <p class="description">Pendaftaran anggota baru Multimedia Club dilakukan melalui formulir resmi. Klik tombol di bawah untuk mengisi data dirimu!</p>
+            </div>
+            <div class="registration-cta-box">
+                <!-- GANTI LINK 'href' DI BAWAH INI DENGAN LINK GOOGLE FORM KAMU -->
+                <a href="https://forms.google.com/your-form-link-here" target="_blank" class="btn-primary cta-btn-large">
+                    <i class="fas fa-external-link-alt"></i> Isi Formulir Pendaftaran
+                </a>
+                <p class="cta-note"><i class="fas fa-info-circle"></i> Pastikan kamu sudah memilih pilar peminatan (Programming atau Broadcasting) sebelum mengisi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>MULTIMEDIA</h3>
+                <p>Unit Kegiatan Sekolah Terpadu bidang Pengembangan Sistem Informasi dan Penyiaran Konten Kreatif.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi Cepat</h4>
+                <ul>
+                    <li><a href="beranda.html">Utama</a></li>
+                    <li><a href="divisi.html">Divisi</a></li>
+                    <li><a href="karya.html">Koleksi Karya</a></li>
+                    <li><a href="Pengurus.html">Pengurus</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Social Network & Lokasi</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Lab Komputer, SMAN 01 Tamansari</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mm__sman1t?igsh=Z3I4enJ0OGo0YmVl"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@multimediasman1t?si=EvZ3g_6QFXkiWU_p"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Multimedia Club. Hak Cipta Dilindungi. Designed with ♥ to fit brand identity.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Club - Creative & Tech Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Animated Background Orbs -->
+    <div class="aurora-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <!-- Logo dengan Gambar + Teks Rapi -->
+            <a href="beranda.html" class="logo">
+                <img src="assets/logo.png" class="logo-icon" alt="Logo Multimedia Club">
+                <div class="logo-text">
+                    <span class="logo-main">MULTIMEDIA</span>
+                    <span class="logo-sub">Creative & Tech</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="beranda.html" class="active">Beranda</a></li>
+                <li><a href="divisi.html">Divisi</a></li>
+                <li><a href="karya.html">Karya</a></li>
+                <li><a href="Pengurus.html">Pengurus</a></li>
+                <li><a href="divisi.html#daftar" class="btn-primary">Gabung Sekarang</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content reveal-left">
+                <div class="badge">Where Code Meets Vision</div>
+                <h1>Satu Logika <br><span class="aurora-text">Sejuta Kreativitas</span></h1>
+                <p>Ekskul Multimedia menyatukan arsitektur program komputer (Programming) dengan indahnya estetika di balik lensa kamera (Broadcasting).</p>
+                <div class="hero-buttons">
+                    <a href="divisi.html#daftar" class="btn-primary"><i class="fas fa-rocket"></i> Ayo Daftar </a>
+                    <a href="karya.html" class="btn-secondary"><i class="fas fa-play"></i> Lihat Karya</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal-right">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>terminal.sys</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> <span class="cmd">init</span> --multimedia-club</p>
+                        <p><span class="prompt">$</span> const multimedia = {</p>
+                        <p class="indent">codeLevel: <span class="string">"Production"</span>,</p>
+                        <p class="indent">broadcastVibe: <span class="string">"Cinematic"</span>,</p>
+                        <p class="indent">readyToExplore: <span class="boolean">true</span></p>
+                        <p><span class="prompt">$</span> };</p>
+                        <p class="prompt">$ <span class="cursor-blink">_</span></p>
+                    </div>
+                </div>
+                <div class="camera-overlay">
+                    <div class="viewfinder-info">
+                        <span class="rec-dot">● REC</span><br>
+                        ISO 400 | f/2.8 | 1/120s
+                    </div>
+                    <div class="crosshair"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats reveal-up">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <h3 class="counter" data-target="30">0</h3>
+                <p>Anggota Aktif</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Sertifikasi</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Proyek Selesai</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi & Misi Section -->
+<section id="tentang" class="section">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <h2>Visi & Misi</h2>
+            <p class="subtitle">PEGANGAN PENDIRIAN CLUB MULTIMEDIA</p>
+            <p class="description">Kami percaya bahwa programmer masa depan butuh keahlian komunikasi visual...</p>
+        </div>
+        
+        <div class="features-grid">
+            <!-- Computational Art -->
+            <div class="feature-card reveal-left">
+                <div class="card-glow"></div>
+                <i class="fas fa-code feature-icon"></i>
+                <h3>Computational Art</h3>
+                
+                <h4>Visi</h4>
+                <p>Menjadikan komunitas programming sebagai wadah belajar yang aktif, kreatif, dan kolaboratif untuk mengembangkan kemampuan teknologi serta membangun generasi yang mampu berpikir logis, inovatif, dan siap menghadapi perkembangan digital.</p>
+                
+                <h4>Misi</h4>
+                <ul>
+                    <li>Menciptakan lingkungan belajar programming yang nyaman dan menyenangkan</li>
+                    <li>Menyelenggarakan materi dan praktik pemrograman yang terstruktur</li>
+                    <li>Mendorong anggota untuk aktif bertanya dan berdiskusi</li>
+                    <li>Mengembangkan kemampuan problem solving dan berpikir logis</li>
+                    <li>Memperkenalkan berbagai bidang teknologi seperti web development</li>
+                </ul>
+            </div>
+
+            <!-- Digital Broadcast -->
+            <div class="feature-card reveal-right">
+                <div class="card-glow"></div>
+                <i class="fas fa-video feature-icon"></i>
+                <h3>Digital Broadcast</h3>
+                
+                <h4>Visi</h4>
+                <p>Menjadikan Broadcasting sebagai organisasi yang kreatif, inovatif, dan berprestasi dalam bidang media, penyiaran, fotografi, dan perfilman, serta mampu menjadi sumber informasi yang inspiratif bagi seluruh warga sekolah.</p>
+                
+                <h4>Misi</h4>
+                <ul>
+                    <li>Mengembangkan kemampuan anggota di bidang broadcasting dan multimedia</li>
+                    <li>Menghasilkan karya media yang informatif, edukatif, dan kreatif</li>
+                    <li>Mendukung publikasi kegiatan sekolah secara profesional</li>
+                    <li>Meningkatkan kerja sama dan kedisiplinan anggota</li>
+                    <li>Meraih prestasi melalui berbagai kegiatan dan perlombaan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Divisi Section -->
+    <section id="divisi" class="section bg-darker">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Struktur Pembelajaran</h2>
+                <p class="subtitle">Dua Pilar Kompetensi</p>
+                <p class="description">Kurikulum dikembangkan sesuai standar industri teknologi informasi & penyiaran kreatif.</p>
+            </div>
+            <div class="divisi-grid">
+                <div class="divisi-card programming reveal-left">
+                    <div class="card-border-glow"></div>
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Programming Division</h3>
+                    <p>Membina bakat di bidang rekayasa perangkat lunak. Anggota didorong untuk mampu menerjemahkan ide bisnis menjadi baris kode siap pakai.</p>
+                    <ul class="curriculum">
+                        <li><i class="fas fa-check-circle"></i> HTML, CSS & Python</li>
+                        <li><i class="fas fa-check-circle"></i> Struktur Website</li>
+                        <li><i class="fas fa-check-circle"></i> Logika Pemrograman</li>
+                        <li><i class="fas fa-check-circle"></i> Praktek Pembuatan Proyek</li>
+                    </ul>
+                </div>
+                <div class="divisi-card broadcasting reveal-right">
+                    <div class="card-border-glow"></div>
+                    <div class="card-icon"><i class="fas fa-film"></i></div>
+                    <h3>Broadcasting Division</h3>
+                    <p>Mengasah kepekaan estetika visual dan produksi audio. Mempersiapkan kru yang andal di lapangan maupun di balik meja editing.</p>
+                    <ul class="curriculum">
+                        <li><i class="fas fa-check-circle"></i> Komposisi & Kamera</li>
+                        <li><i class="fas fa-check-circle"></i> Video Editing</li>
+                        <li><i class="fas fa-check-circle"></i> Color Grading LUT</li>
+                        <li><i class="fas fa-check-circle"></i> Live Audio & Stream</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section reveal-up">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Siap Mendalami Lebih Lanjut?</h2>
+                <p>Jelajahi detail kurikulum, lihat karya terbaik kami, kenali tim di balik layar, atau telusuri perjalanan panjang ekskul ini.</p>
+                <div class="cta-buttons">
+                    <a href="divisi.html" class="btn-primary">
+                        <i class="fas fa-layer-group"></i> Detail Divisi
+                    </a>
+                    <a href="karya.html" class="btn-secondary">
+                        <i class="fas fa-images"></i> Galeri Karya
+                    </a>
+                    <a href="Pengurus.html" class="btn-secondary">
+                        <i class="fas fa-users"></i> Struktur Pengurus
+                    </a>
+                    <!-- Tombol Sejarah dengan aksen khusus -->
+                    <a href="sejarah.html" class="btn-secondary history-btn">
+                        <i class="fas fa-book-open"></i> Sejarah Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>MULTIMEDIA</h3>
+                <p>Unit Kegiatan Sekolah Terpadu bidang Pengembangan Sistem Informasi dan Penyiaran Konten Kreatif.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi Cepat</h4>
+                <ul>
+                    <li><a href="beranda.html">Utama</a></li>
+                    <li><a href="divisi.html">Divisi</a></li>
+                    <li><a href="karya.html">Koleksi Karya</a></li>
+                    <li><a href="Pengurus.html">Pengurus</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Social Network & Lokasi</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Lab Komputer, SMAN 01 Tamansari</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mm__sman1t?igsh=Z3I4enJ0OGo0YmVl"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@multimediasman1t?si=EvZ3g_6QFXkiWU_p"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Multimedia Club. Hak Cipta Dilindungi. Designed with ♥ to fit brand identity.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
